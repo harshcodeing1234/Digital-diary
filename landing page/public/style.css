@@ -1,0 +1,82 @@
+/* Diary text area */
+.diary-textarea {
+    min-height: 283px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+/* Entry card */
+.entry-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: white;
+    border: 1px solid rgba(0,0,0,0.05);
+    will-change: transform;
+}
+
+/* Hover effect */
+.entry-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-color: rgba(59,130,246,0.3);
+}
+
+/* Entries list */
+.entries-list {
+    contain: layout style;
+    height: 160px;
+}
+
+/* Scrollbar customization */
+.entries-list::-webkit-scrollbar {
+    width: 6px;
+    
+}
+
+.entries-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.entries-list::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 10px;
+}
+
+/* Entry date */
+.entry-date {
+    font-family: monospace;
+}
+
+/* Authentication container */
+.auth-container {
+    background-image: url('diary_background.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main container */
+.main-container {
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+}
+
+/* Stats boxes */
+.stat-box {
+    text-align: center;
+    padding: 8px 4px;
+}
+
+.stat-value {
+    display: block;
+    font-weight: bold;
+    color: #1e40af;
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.75rem;
+    color: #6b7280;
+}

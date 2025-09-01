@@ -1,0 +1,5 @@
+{
+  "watch": ["*.cpp", "*.h", "*.html"],
+  "ext": "cpp,h,html",
+  "exec": "cl /EHsc /std:c++17 main.cpp db.cpp /I \"C:\\Program Files\\Oracle\\instantclient_19_22\\sdk\\include\" /Fe:build\\main.exe /link /LIBPATH:\"C:\\Program Files\\Oracle\\instantclient_19_22\\sdk\\lib\\msvc\" oraocci19.lib oci.lib && build\\main.exe"
+}
